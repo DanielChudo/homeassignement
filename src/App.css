@@ -1,38 +1,110 @@
-.App {
+body {
+  background-color: #f3efe4;
+}
+
+h1 {
   text-align: center;
+  font-size: 3rem;
+  font-weight: 700;
+  margin-top: 2rem;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+p {
+  white-space: nowrap;
+  font-size: 1.5rem;
+  font-weight: 700;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+button {
+  white-space: nowrap;
+  font-size: 1rem;
+  padding: 0.6rem 1.6rem 0.6rem 1.6rem;
+  background-color: #2ecc71;
+  color: #fff;
+  border: none;
+  border-radius: 2rem;
+  cursor: pointer;
+  font-weight: 800;
+}
+
+button:hover {
+  background-color: #33d878;
+}
+
+button:active {
+  background-color: #2dc46c;
+  transform: translateY(1px);
+}
+
+button:disabled {
+  background-color: #cdcbc4;
+  cursor: default;
+}
+
+#base {
+  display: grid;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.wrapper {
+  background-color: #fff;
+  border: solid 1px #e3e3e3;
+  border-radius: 2rem;
+  padding: 2rem;
+}
+
+#overlay {
+  position: fixed;
+  visibility: hidden;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.visible,
+.visible div {
+  visibility: visible !important;
+  opacity: 1 !important;
+}
+
+@media only screen and (min-width: 420px) {
+  #base {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  p {
+    font-size: 1.2rem;
+  }
+
+  button {
+    padding: 0.4rem;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media only screen and (min-width: 780px) {
+  #base {
+    grid-template-columns: repeat(4, 1fr);
   }
-  to {
-    transform: rotate(360deg);
+
+  p {
+    font-size: 1.4rem;
+  }
+
+  button {
+    padding: 0.4rem;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  #base {
+    grid-template-columns: repeat(5, 1fr);
   }
 }

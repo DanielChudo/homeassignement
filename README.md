@@ -1,8 +1,13 @@
+# Result
+
+![NFT market](https://i.ibb.co/3T7m9Kn/nft-market.png)
+![NFT buy](https://i.ibb.co/tcXPHHR/nft-market-buy.png)
+
 # Home assignement
 
-Create small app which consists of gallery view (tiles 5*8) which has adaption for 3 most common screen widths (smartphone, tablet, big screen). You can use material-ui.com library.  
+Create small app which consists of gallery view (tiles 5\*8) which has adaption for 3 most common screen widths (smartphone, tablet, big screen). You can use material-ui.com library.
 
-Each tile is an e-commerce item and onclick appears form (chosen item, 3 field: telephone, address, email) with ability to make order  
+Each tile is an e-commerce item and onclick appears form (chosen item, 3 field: telephone, address, email) with ability to make order
 
 ### Here you can find the wireframe `/wireframe/index.html`
 
